@@ -3,18 +3,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root{
+    --primaryTextColor:  #21324B;
+    --secondaryTextColor: #333;
+    
+    --primaryBackground: #78B9BA;
+    --secondaryBackground: #CE472F;
+    --thirdBackground: #C6C5B4;
 }
 
 body {
-    background-color: #f0f8ff; /* light oceanic blue */
+    background-color: var(--primaryBackground) /* light oceanic blue */
     color: #333;
 }
 
 /* Header and Navigation */
 header {
-    background-color: #006994; /* deeper ocean blue */
-    color: #fff;
+    background-color: aqua; /* deeper ocean blue */
+    color:aqua;
     padding: 1rem;
     text-align: center;
 }
@@ -22,7 +31,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #007BA7; /* medium ocean blue */
+    background-color: var(--secondaryBackground); /* medium ocean blue */
 }
 
 nav ul {
@@ -42,14 +51,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffdd44; /* highlight color */
+    color: #E1DF66; /* highlight color */
     border-bottom: 2px solid #ffdd44;
 }
 
 /* Main content styling */
 h1 {
     font-size: 2.5rem;
-    color: #00416a;
+    color: var(--primaryTextColor)#;
     text-align: center;
     margin: 2rem 0;
 }
@@ -69,4 +78,11 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+}
+img {
+    display: block;         /* Mengubah gambar menjadi elemen blok */
+    margin-left: auto;      /* Margin kiri otomatis */
+    margin-right: auto;     /* Margin kanan otomatis */
+    width: 300px;           /* Sesuaikan lebar gambar */
+    height: auto;
 }
